@@ -73,7 +73,7 @@ launch:
       default: "true"
   - arg:
       name: launch_speed_bump_module
-      default: "false"
+      default: "true"
   - arg:
       name: launch_out_of_lane_module
       default: "true"
@@ -112,7 +112,7 @@ launch:
 
   - arg:
       name: launch_surround_obstacle_checker
-      default: "true"
+      default: "false"
 
   # parking modules
   - arg:

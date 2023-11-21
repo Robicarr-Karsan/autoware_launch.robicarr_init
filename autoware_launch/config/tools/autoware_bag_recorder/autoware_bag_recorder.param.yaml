@@ -1,0 +1,41 @@
+/**:
+  ros__parameters:
+    common:
+      database_storage: "sqlite3"                              # sqlite3 or mcap
+      maximum_record_time: 36000                            # seconds
+      maximum_allowed_bag_storage_size: 500.0               # GB
+      maximum_bag_file_size: 20.0                           # GB
+      enable_only_auto_mode_recording: false                # if enabled, recording occurs only "AUTO" mode
+      number_of_maximum_bags: 1000                          # limit of stored bag file count
+      path: "/media/robicarr/ssd/bags/temp/"                # Path to bag file for saving
+      prefix: "logging_ros2bag_"                            # Prefix for folder name
+      minimum_acceptable_disk_space: 20                     # GB
+      disk_space_threshold_action: "remove"                 # [remove, shutdown] remove files or shutdown node
+    raw_input_topics:                                       # for rosbag-replay (logging) simulation
+      record_raw_input: true
+      raw_input_topics:
+        - /perception/object_recognition/detection/rois0
+        - /sensing/camera/camera0/camera_info
+        - /sensing/gnss/clap/ros/imu
+        - /sensing/gnss/clap/ros/gps_nav_sat_fix
+        - /sensing/gnss/clap/ros/twist_with_covariance_stamped
+        - /sensing/gnss/clap/autoware_orientation
+        - /sensing/lidar/front/pointcloud_raw_ex
+        - /sensing/lidar/top/pointcloud_raw_ex
+        - /vehicle/status/control_mode
+        - /vehicle/status/gear_status
+        - /vehicle/status/steering_status
+        - /vehicle/status/velocity_status
+    other_topics:                                           # all other topics
+      record_other: true
+      other_topics:
+        # - /sensing/camera/camera0/image_rect
+        # - /perception/obstacle_segmentation/pointcloud
+        # - /perception/object_recognition/objects
+        # - /planning/scenario_planning/trajectory
+        # - /planning/scenario_planning/lane_driving/behavior_planning/path
+        # rviz plugin topics 
+        - /sensing/gnss/clap/clap_ins
+        - /localization/pose_estimator/exe_time_ms
+        - /sensing/camera/camera0/image_compressed
+

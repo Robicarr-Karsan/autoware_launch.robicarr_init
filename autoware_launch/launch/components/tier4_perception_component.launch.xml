@@ -23,6 +23,9 @@
     <arg name="objects_validation_method" value="$(var detected_objects_validation_method)"/>
     <arg name="data_path" value="$(var data_path)"/>
 
+    <!-- camera lidar fusion param -->
+     <arg name="remove_unknown" value="false"/>
+
     <!-- object recognition -->
     <arg
       name="object_recognition_detection_euclidean_cluster_param_path"

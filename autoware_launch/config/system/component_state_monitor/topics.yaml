@@ -226,7 +226,7 @@
   type: autonomous
   args:
     node_name_suffix: lidar_front
-    topic: /sensing/lidar/front/pointcloud_raw_ex
+    topic: /sensing/lidar/front/pointcloud_raw
     topic_type: sensor_msgs/msg/PointCloud2
     frame_id: rs_bpearl_front
     best_effort: true
@@ -240,7 +240,7 @@
   type: autonomous
   args:
     node_name_suffix: lidar_top
-    topic: /sensing/lidar/top/pointcloud_raw_ex
+    topic: /sensing/lidar/top/pointcloud_raw
     topic_type: sensor_msgs/msg/PointCloud2
     frame_id: rs_helios_top
     best_effort: true

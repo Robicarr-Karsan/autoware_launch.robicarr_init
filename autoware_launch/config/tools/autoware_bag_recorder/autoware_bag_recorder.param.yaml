@@ -20,8 +20,8 @@
         - /sensing/gnss/clap/ros/gps_nav_sat_fix
         - /sensing/gnss/clap/ros/twist_with_covariance_stamped
         - /sensing/gnss/clap/autoware_orientation
-        - /sensing/lidar/front/pointcloud_raw_ex
-        - /sensing/lidar/top/pointcloud_raw_ex
+        - /sensing/lidar/front/pointcloud_raw
+        - /sensing/lidar/top/pointcloud_raw
         - /vehicle/status/control_mode
         - /vehicle/status/gear_status
         - /vehicle/status/steering_status
@@ -41,3 +41,6 @@
         # rviz plugin topics
         - /sensing/gnss/clap/clap_ins
         - /localization/pose_estimator/exe_time_ms
+        - /interface/llc_to_comp
+        - /interface/comp_to_llc
+        - /control/command/control_cmd
